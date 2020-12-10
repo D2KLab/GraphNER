@@ -6,6 +6,7 @@ snap/
 tempGraph.emb
 tempGraph.graph
 hparams.yaml
+*.pickle
 
 data/conll2003_sparse_dev.pickle
 data/conll2003_sparse_test.pickle
