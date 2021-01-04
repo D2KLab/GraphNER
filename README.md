@@ -5,11 +5,12 @@ This repository contains the preliminary code for reproducing the results report
 ## Overview
 The code is organized as notebooks, to be used as follows:
 * `final_generate_gazetteers.ipynb`: to generate the gazeteers from Wikidata (by specifying a list of QIDs correspoding to the classes)
+* `edge_list_generation.ipynb`: to generate the graph structure to build the graph embeddings
 * `graph_embeddings_generation.ipynb`: to generate node embeddings using [GEM library](https://github.com/palash1992/GEM) algorithms (e.g. node2ve, SDNE..)
 * `nodes_classifier.ipynb`: to train a model for the node embeddings
-* `v2.0/autoencoder_embeddings.ipynb`: to generate auto-encoder embeddings from the binary graph representations.
-* `v2.0/autoencoder_nn_classification.ipynb`: to train a model for the auto-encoder embeddings
-* `v2.0/GCN-node-simple-features.ipynb`: to train a GCN on the CoNLL-2003 task
+* `autoencoder_embeddings.ipynb`: to generate auto-encoder embeddings from the binary graph representations.
+* `autoencoder_nn_classification.ipynb`: to train a model for the auto-encoder embeddings
+* `GCN-node-simple-features.ipynb`: to train a GCN on the CoNLL-2003 task
 
 The code will be streamlined into stand-alone configurable scripts and fully documented soon.
 
@@ -38,5 +39,5 @@ Node2Vec-300     | 93.8     | 94.1     | 82.0
 Node2Vec-500     | 93.8     | 94.1     | 82.5
 Node2Vec-1000    | 93.8     | 94.1     | 82.1 
 GCN              | 96.1     | 96.1     | 86.3 
-**GCN+**         | **96.5**     | **96.5**    | **88.8**
+**GCN+**         | **96.5** | **96.5** | **88.8**
 
