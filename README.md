@@ -4,11 +4,11 @@ This repository contains the preliminary code for reproducing the results report
 
 ## Overview
 The code is organized as notebooks, to be used as follows:
-* `final_generate_gazetteers.ipynb`: to generate the gazeteers from Wikidata (by specifying a list of QIDs correspoding to the classes)
+* `final_generate_gazetteers.ipynb`: to generate the gazeteers from Wikidata (by specifying a list of QIDs corresponding to the classes)
 * `edge_list_generation.ipynb`: to generate the graph structure to build the graph embeddings
 * `graph_embeddings_generation.ipynb`: to generate node embeddings using [GEM library](https://github.com/palash1992/GEM) algorithms (e.g. node2ve, SDNE..)
 * `nodes_classifier.ipynb`: to train a model for the node embeddings
-* `autoencoder_embeddings.ipynb`: to generate auto-encoder embeddings from the binary graph representations.
+* `autoencoder_embeddings.ipynb`: to generate auto-encoder embeddings from the binary graph representations
 * `autoencoder_nn_classification.ipynb`: to train a model for the auto-encoder embeddings
 * `GCN-node-simple-features.ipynb`: to train a GCN on the CoNLL-2003 task
 
