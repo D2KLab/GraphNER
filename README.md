@@ -27,6 +27,8 @@ The code will be streamlined into stand-alone configurable scripts and fully doc
 :warning:	This code runs on a CUDA11.0-enabled GPU, please install the compatible version of the modules for your hardware.
 
 ## Results
+The table below shows the performance of different models on the validation set of CoNLL-2003
+
 Method           | Accuracy | Micro-F1 | Macro-F1 
 -----------------|----------|----------|---------
 Binary           | 91.0     | 90.7     | 77.9 
