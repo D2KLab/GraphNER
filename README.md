@@ -27,19 +27,23 @@ The code will be streamlined into stand-alone configurable scripts and fully doc
 :warning:	This code runs on a CUDA11.0-enabled GPU, please install the compatible version of the modules for your hardware.
 
 ## Results
-The table below shows the performance of different models on the validation set (dev) of [CoNLL-2003](https://www.clips.uantwerpen.be/conll2003/ner/)
+The table below shows the best performance of different models on the validation set (dev) of [CoNLL-2003](https://www.clips.uantwerpen.be/conll2003/ner/)
 
 Method           | Accuracy | Micro-F1 | Macro-F1 
 -----------------|----------|----------|---------
-Binary           | 91.0     | 90.7     | 77.9 
-Binary+          | 94.4     | 94.2     | 81.9 
-Binary++         | 94.3     | 93.8     | 82.3 
-Auto-encoder-100 | 87.2     | 86.7     | 57.6
-Auto-encoder-500 | 90.4     | 89.9     | 68.3
-Auto-encoder-2000| 91.8     | 91.5     | 71.7 
-Node2Vec-300     | 93.8     | 94.1     | 82.0
-Node2Vec-500     | 93.8     | 94.1     | 82.5
-Node2Vec-1000    | 93.8     | 94.1     | 82.1 
-GCN              | 96.1     | 96.1     | 86.3 
-**GCN+**         | **96.5** | **96.5** | **88.8**
+Auto-encoder     | 91.8     | 91.5     | 71.7
+Node2Vec         | 93.8     | 94.1     | 82.1 
+Trans-E          | 94.1     | 93.6     | 78.8
+**GCN**          | **96.5** | **96.5** | **88.8**
+
+As for test set performance:
+
+Method           | Micro-F1 | Macro-F1 |
+-----------------|----------|----------|
+Auto-encoder     | 91.5     | 70.4     |
+Node2Vec         | 91.1     | 72.6     |
+Trans-E          | 91.9     | 74.5     |
+**GCN**          | **94.1** | **81.0** |
+-----------------|----------|----------|
+**LUKE**         |          | **94.3** |
 
